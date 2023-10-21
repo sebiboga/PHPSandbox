@@ -1,6 +1,6 @@
 <?php
-$rawDomain = "https://peviitor.ro";
 
+$rawDomain = isset($_POST['rawDomain']) ? $_POST['domain'] : "https://peviitor.ro";
 function addProtocolToDomain($domain) {
     if (strpos($domain, 'http://') !== 0 && strpos($domain, 'https://') !== 0) {
         $domain = 'https://' . $domain; // Add "https://" as the protocol
