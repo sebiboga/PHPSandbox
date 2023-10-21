@@ -1,5 +1,5 @@
 <?php
-$rawDomain = "https:\/\/peviitor.ro";
+$rawDomain = "https://peviitor.ro";
 
 function addProtocolToDomain($domain) {
     if (strpos($domain, 'http://') !== 0 && strpos($domain, 'https://') !== 0) {
